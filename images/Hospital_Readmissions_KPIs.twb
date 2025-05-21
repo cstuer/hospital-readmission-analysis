@@ -1,0 +1,1201 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20242.24.0807.0327                               -->
+<workbook original-version='18.1' source-build='2024.2.2 (20242.24.0807.0327)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <MapboxVectorStylesAndLayers />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='hospital_readmissions (cms_readmissions.hospital_readmissions) (utf8)' inline='true' name='federated.1hxw2e617cjwm612tq02f0c9o6ww' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='localhost' name='postgres.0utuk6a0x3czs81f2tz9v08olhln'>
+            <connection authentication='username-password' class='postgres' dbname='utf8' one-time-sql='' port='5432' server='localhost' username='postgres' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='postgres.0utuk6a0x3czs81f2tz9v08olhln' name='hospital_readmissions' table='[cms_readmissions].[hospital_readmissions]' type='table' />
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='postgres.0utuk6a0x3czs81f2tz9v08olhln' name='hospital_readmissions' table='[cms_readmissions].[hospital_readmissions]' type='table' />
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>facility_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[facility_name]</local-name>
+            <parent-name>[hospital_readmissions]</parent-name>
+            <remote-alias>facility_name</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>255</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[hospital_readmissions (cms_readmissions.hospital_readmissions)_C8B9FB393EAD49AA8A5DFF588B12F715]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>facility_id</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[facility_id]</local-name>
+            <parent-name>[hospital_readmissions]</parent-name>
+            <remote-alias>facility_id</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>17</precision>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[hospital_readmissions (cms_readmissions.hospital_readmissions)_C8B9FB393EAD49AA8A5DFF588B12F715]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>state</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[state]</local-name>
+            <parent-name>[hospital_readmissions]</parent-name>
+            <remote-alias>state</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>50</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[hospital_readmissions (cms_readmissions.hospital_readmissions)_C8B9FB393EAD49AA8A5DFF588B12F715]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>measure_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[measure_name]</local-name>
+            <parent-name>[hospital_readmissions]</parent-name>
+            <remote-alias>measure_name</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>50</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[hospital_readmissions (cms_readmissions.hospital_readmissions)_C8B9FB393EAD49AA8A5DFF588B12F715]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>footnote</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[footnote]</local-name>
+            <parent-name>[hospital_readmissions]</parent-name>
+            <remote-alias>footnote</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>20</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[hospital_readmissions (cms_readmissions.hospital_readmissions)_C8B9FB393EAD49AA8A5DFF588B12F715]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>number_of_discharges</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[number_of_discharges]</local-name>
+            <parent-name>[hospital_readmissions]</parent-name>
+            <remote-alias>number_of_discharges</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[hospital_readmissions (cms_readmissions.hospital_readmissions)_C8B9FB393EAD49AA8A5DFF588B12F715]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>excess_readmission_ratio</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[excess_readmission_ratio]</local-name>
+            <parent-name>[hospital_readmissions]</parent-name>
+            <remote-alias>excess_readmission_ratio</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>17</precision>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[hospital_readmissions (cms_readmissions.hospital_readmissions)_C8B9FB393EAD49AA8A5DFF588B12F715]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>number_of_readmissions</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[number_of_readmissions]</local-name>
+            <parent-name>[hospital_readmissions]</parent-name>
+            <remote-alias>number_of_readmissions</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[hospital_readmissions (cms_readmissions.hospital_readmissions)_C8B9FB393EAD49AA8A5DFF588B12F715]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>start_date</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[start_date]</local-name>
+            <parent-name>[hospital_readmissions]</parent-name>
+            <remote-alias>start_date</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[hospital_readmissions (cms_readmissions.hospital_readmissions)_C8B9FB393EAD49AA8A5DFF588B12F715]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>end_date</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[end_date]</local-name>
+            <parent-name>[hospital_readmissions]</parent-name>
+            <remote-alias>end_date</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[hospital_readmissions (cms_readmissions.hospital_readmissions)_C8B9FB393EAD49AA8A5DFF588B12F715]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>predicted_readmission_rate</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[predicted_readmission_rate]</local-name>
+            <parent-name>[hospital_readmissions]</parent-name>
+            <remote-alias>predicted_readmission_rate</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>17</precision>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[hospital_readmissions (cms_readmissions.hospital_readmissions)_C8B9FB393EAD49AA8A5DFF588B12F715]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>expected_readmission_rate</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[expected_readmission_rate]</local-name>
+            <parent-name>[hospital_readmissions]</parent-name>
+            <remote-alias>expected_readmission_rate</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>17</precision>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[hospital_readmissions (cms_readmissions.hospital_readmissions)_C8B9FB393EAD49AA8A5DFF588B12F715]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='hospital_readmissions' datatype='table' name='[__tableau_internal_object_id__].[hospital_readmissions (cms_readmissions.hospital_readmissions)_C8B9FB393EAD49AA8A5DFF588B12F715]' role='measure' type='quantitative' />
+      <column caption='End Date' datatype='date' name='[end_date]' role='dimension' type='ordinal' />
+      <column caption='Excess Readmission Ratio' datatype='real' name='[excess_readmission_ratio]' role='measure' type='quantitative' />
+      <column caption='Expected Readmission Rate' datatype='real' name='[expected_readmission_rate]' role='measure' type='quantitative' />
+      <column caption='Facility Id' datatype='real' name='[facility_id]' role='dimension' type='ordinal' />
+      <column caption='Facility Name' datatype='string' name='[facility_name]' role='dimension' type='nominal' />
+      <column caption='Footnote' datatype='string' name='[footnote]' role='dimension' type='nominal' />
+      <column caption='Measure Name' datatype='string' name='[measure_name]' role='dimension' type='nominal' />
+      <column caption='Number Of Discharges' datatype='integer' name='[number_of_discharges]' role='measure' type='quantitative' />
+      <column caption='Number Of Readmissions' datatype='integer' name='[number_of_readmissions]' role='measure' type='quantitative' />
+      <column caption='Predicted Readmission Rate' datatype='real' name='[predicted_readmission_rate]' role='measure' type='quantitative' />
+      <column caption='Start Date' datatype='date' name='[start_date]' role='dimension' type='ordinal' />
+      <column caption='State' datatype='string' name='[state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='hospital_readmissions' id='hospital_readmissions (cms_readmissions.hospital_readmissions)_C8B9FB393EAD49AA8A5DFF588B12F715'>
+            <properties context=''>
+              <relation connection='postgres.0utuk6a0x3czs81f2tz9v08olhln' name='hospital_readmissions' table='[cms_readmissions].[hospital_readmissions]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='utf8' inline='true' name='federated.0meagr51a18p4h1dllu3k0jrmiqj' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='localhost' name='postgres.0skq09m1vskrb115lysez05ch3au'>
+            <connection authentication='username-password' class='postgres' dbname='utf8' one-time-sql='' port='5432' server='localhost' username='postgres' />
+          </named-connection>
+        </named-connections>
+      </connection>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph />
+    </datasource>
+    <datasource caption='kpi_dashboard_summary (cms_readmissions.kpi_dashboard_summary) (utf8)' inline='true' name='federated.0ptani30fpxnam13u2ouh0im7exm' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='localhost' name='postgres.0hdiy3i022vya61a4j16306rle8p'>
+            <connection authentication='username-password' class='postgres' dbname='utf8' one-time-sql='' port='5432' server='localhost' username='postgres' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='postgres.0hdiy3i022vya61a4j16306rle8p' name='kpi_dashboard_summary' table='[cms_readmissions].[kpi_dashboard_summary]' type='table' />
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='postgres.0hdiy3i022vya61a4j16306rle8p' name='kpi_dashboard_summary' table='[cms_readmissions].[kpi_dashboard_summary]' type='table' />
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>national_avg_readmission_ratio</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[national_avg_readmission_ratio]</local-name>
+            <parent-name>[kpi_dashboard_summary]</parent-name>
+            <remote-alias>national_avg_readmission_ratio</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>17</precision>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[kpi_dashboard_summary (cms_readmissions.kpi_dashboard_summary)_94A2FD2D4DB141B9BBDEE3043AC43B08]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_facilities_analyzed</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[total_facilities_analyzed]</local-name>
+            <parent-name>[kpi_dashboard_summary]</parent-name>
+            <remote-alias>total_facilities_analyzed</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>19</precision>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[kpi_dashboard_summary (cms_readmissions.kpi_dashboard_summary)_94A2FD2D4DB141B9BBDEE3043AC43B08]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>state_highest_avg_readmission</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[state_highest_avg_readmission]</local-name>
+            <parent-name>[kpi_dashboard_summary]</parent-name>
+            <remote-alias>state_highest_avg_readmission</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>50</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[kpi_dashboard_summary (cms_readmissions.kpi_dashboard_summary)_94A2FD2D4DB141B9BBDEE3043AC43B08]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>percent_facilities_above_expected</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[percent_facilities_above_expected]</local-name>
+            <parent-name>[kpi_dashboard_summary]</parent-name>
+            <remote-alias>percent_facilities_above_expected</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>17</precision>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[kpi_dashboard_summary (cms_readmissions.kpi_dashboard_summary)_94A2FD2D4DB141B9BBDEE3043AC43B08]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='kpi_dashboard_summary' datatype='table' name='[__tableau_internal_object_id__].[kpi_dashboard_summary (cms_readmissions.kpi_dashboard_summary)_94A2FD2D4DB141B9BBDEE3043AC43B08]' role='measure' type='quantitative' />
+      <column caption='National Avg Readmission Ratio' datatype='real' name='[national_avg_readmission_ratio]' role='measure' type='quantitative' />
+      <column caption='Percent Facilities Above Expected' datatype='real' name='[percent_facilities_above_expected]' role='measure' type='quantitative' />
+      <column caption='State Highest Avg Readmission' datatype='string' name='[state_highest_avg_readmission]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column caption='Total Facilities Analyzed' datatype='integer' name='[total_facilities_analyzed]' role='measure' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='kpi_dashboard_summary' id='kpi_dashboard_summary (cms_readmissions.kpi_dashboard_summary)_94A2FD2D4DB141B9BBDEE3043AC43B08'>
+            <properties context=''>
+              <relation connection='postgres.0hdiy3i022vya61a4j16306rle8p' name='kpi_dashboard_summary' table='[cms_readmissions].[kpi_dashboard_summary]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <worksheets>
+    <worksheet name='Facilities Above Expected Rate'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#00007f' fontsize='10'>% of Facilities Above Expected Rate</run>
+            <run fontalignment='1'>Æ&#10;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='kpi_dashboard_summary (cms_readmissions.kpi_dashboard_summary) (utf8)' name='federated.0ptani30fpxnam13u2ouh0im7exm' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0ptani30fpxnam13u2ouh0im7exm'>
+            <column caption='Percent Facilities Above Expected' datatype='real' name='[percent_facilities_above_expected]' role='measure' type='quantitative' />
+            <column-instance column='[percent_facilities_above_expected]' derivation='Sum' name='[sum:percent_facilities_above_expected:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-align' value='center' />
+            <format attr='color' value='#00007f' />
+            <format attr='width' value='153' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-width' value='0' />
+            <format attr='border-style' value='none' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#ebebeb' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <text column='[federated.0ptani30fpxnam13u2ouh0im7exm].[sum:percent_facilities_above_expected:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='cell'>
+                <format attr='vertical-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='size' value='2' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{C3AF24FD-99DD-4159-A20D-5CAA9D2983F8}' />
+    </worksheet>
+    <worksheet name='Highest State Avg Readmissions'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#00007f' fontsize='10'>Highest State Average Readmissions</run>
+            <run fontalignment='1'>Æ&#10;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='kpi_dashboard_summary (cms_readmissions.kpi_dashboard_summary) (utf8)' name='federated.0ptani30fpxnam13u2ouh0im7exm' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.0ptani30fpxnam13u2ouh0im7exm'>
+            <column-instance column='[state_highest_avg_readmission]' derivation='None' name='[none:state_highest_avg_readmission:nk]' pivot='key' type='nominal' />
+            <column caption='State Highest Avg Readmission' datatype='string' name='[state_highest_avg_readmission]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-align' value='center' />
+            <format attr='color' value='#00007f' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-width' value='0' />
+            <format attr='border-style' value='none' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#ebebeb' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Text' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <text column='[federated.0ptani30fpxnam13u2ouh0im7exm].[none:state_highest_avg_readmission:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='cell'>
+                <format attr='vertical-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='size' value='2' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{EF99F583-C78C-4C52-8519-0F0C0480586F}' />
+    </worksheet>
+    <worksheet name='Natl Avg Readmin Ratio'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#00007f' fontsize='10'>National Readmission Avg</run>
+            <run fontalignment='1'>Æ&#10;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='kpi_dashboard_summary (cms_readmissions.kpi_dashboard_summary) (utf8)' name='federated.0ptani30fpxnam13u2ouh0im7exm' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0ptani30fpxnam13u2ouh0im7exm'>
+            <column-instance column='[national_avg_readmission_ratio]' derivation='Avg' name='[avg:national_avg_readmission_ratio:qk]' pivot='key' type='quantitative' />
+            <column caption='National Avg Readmission Ratio' datatype='real' name='[national_avg_readmission_ratio]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-align' value='center' />
+            <format attr='color' value='#00007f' />
+            <format attr='border-width' value='0' />
+            <format attr='border-style' value='none' />
+            <format attr='vertical-align' field='[federated.0ptani30fpxnam13u2ouh0im7exm].[avg:national_avg_readmission_ratio:qk]' value='bottom' />
+            <format attr='width' value='183' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-align' value='center' />
+            <format attr='vertical-align' value='center' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-width' value='0' />
+            <format attr='border-style' value='none' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#ebebeb' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <text column='[federated.0ptani30fpxnam13u2ouh0im7exm].[avg:national_avg_readmission_ratio:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='cell'>
+                <format attr='vertical-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='size' value='2' />
+                <format attr='mark-transparency' value='255' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{C4EC9714-C730-4A21-81E4-B4FBBDA48254}' />
+    </worksheet>
+    <worksheet name='Total Facilities Analyzed'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#00007f' fontsize='10'>Total Facilities </run>
+            <run fontalignment='1'>Æ&#10;</run>
+            <run bold='true' fontalignment='1' fontcolor='#00007f' fontsize='10'>Æ                                                                                                                                                                                                                                                           </run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='kpi_dashboard_summary (cms_readmissions.kpi_dashboard_summary) (utf8)' name='federated.0ptani30fpxnam13u2ouh0im7exm' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0ptani30fpxnam13u2ouh0im7exm'>
+            <column-instance column='[total_facilities_analyzed]' derivation='Sum' name='[sum:total_facilities_analyzed:qk]' pivot='key' type='quantitative' />
+            <column caption='Total Facilities Analyzed' datatype='integer' name='[total_facilities_analyzed]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-align' value='center' />
+            <format attr='color' value='#00007f' />
+            <format attr='text-align' data-class='subtotal' field='[federated.0ptani30fpxnam13u2ouh0im7exm].[sum:total_facilities_analyzed:qk]' value='center' />
+            <format attr='text-align' data-class='subtotal' value='auto' />
+            <format attr='vertical-align' value='center' />
+            <format attr='width' value='193' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='vertical-align' data-class='total' scope='rows' value='auto' />
+            <format attr='vertical-align' data-class='subtotal' value='auto' />
+            <format attr='text-align' data-class='total' value='auto' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-align' value='center' />
+            <format attr='vertical-align' value='bottom' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-width' value='0' />
+            <format attr='border-style' value='none' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#ebebeb' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <text column='[federated.0ptani30fpxnam13u2ouh0im7exm].[sum:total_facilities_analyzed:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='cell'>
+                <format attr='vertical-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='size' value='2' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{240E0980-6CDB-481C-BBE1-18BC72D15A15}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <layout-options export-center-vert='true' export-scale-fitpage='false' export-scale-mode-auto='false' export-scale-percent='125'>
+        <title>
+          <formatted-text>
+            <run fontcolor='#00007f' fontname='Benton Sans Book'>Hospital Readmissions KPIs</run>
+            <run>Æ&#10;</run>
+            <run fontcolor='#000000' fontname='Tableau Light' fontsize='10' italic='true'>Key Indicators from CMS Hospital Readmissions Data </run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='77125' id='39' param='vert' type-v2='layout-flow' w='98400' x='800' y='17875'>
+            <zone h='10250' id='40' type-v2='title' w='98400' x='800' y='17875'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone h='17250' id='37' param='vert' type-v2='layout-flow' w='98400' x='800' y='28125'>
+              <zone h='17250' id='23' param='vert' type-v2='layout-flow' w='98400' x='800' y='28125'>
+                <zone fixed-size='138' h='17250' id='31' is-fixed='true' layout-strategy-id='distribute-evenly' param='horz' type-v2='layout-flow' w='98400' x='800' y='28125'>
+                  <zone h='17250' id='33' name='Total Facilities Analyzed' w='24600' x='800' y='28125'>
+                    <layout-cache fixed-size-h='68' type-h='fixed' type-w='fixed' />
+                    <zone-style>
+                      <format attr='border-color' value='#cccccc' />
+                      <format attr='border-style' value='solid' />
+                      <format attr='border-width' value='1' />
+                      <format attr='margin' value='6' />
+                      <format attr='margin-top' value='4' />
+                      <format attr='margin-bottom' value='4' />
+                      <format attr='padding' value='0' />
+                      <format attr='padding-top' value='0' />
+                    </zone-style>
+                  </zone>
+                  <zone h='17250' id='32' name='Natl Avg Readmin Ratio' w='24600' x='25400' y='28125'>
+                    <layout-cache fixed-size-h='96' type-h='fixed' type-w='fixed' />
+                    <zone-style>
+                      <format attr='border-color' value='#d9d9d9' />
+                      <format attr='border-style' value='solid' />
+                      <format attr='border-width' value='1' />
+                      <format attr='margin' value='4' />
+                      <format attr='margin-bottom' value='5' />
+                    </zone-style>
+                  </zone>
+                  <zone h='17250' id='34' name='Facilities Above Expected Rate' w='24600' x='50000' y='28125'>
+                    <layout-cache fixed-size-h='96' type-h='fixed' type-w='fixed' />
+                    <zone-style>
+                      <format attr='border-color' value='#d9d9d9' />
+                      <format attr='border-style' value='solid' />
+                      <format attr='border-width' value='1' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='17250' id='35' name='Highest State Avg Readmissions' w='24600' x='74600' y='28125'>
+                    <layout-cache fixed-size-h='96' type-h='fixed' type-w='fixed' />
+                    <zone-style>
+                      <format attr='border-color' value='#cccccc' />
+                      <format attr='border-style' value='solid' />
+                      <format attr='border-width' value='1' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone forceUpdate='true' h='4000' id='41' type-v2='text' w='98400' x='800' y='95000'>
+            <formatted-text>
+              <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='6'>Data Source: Centers for Medicare &amp; Medicaid Services (CMS) | Created by Cody Stuerman | Developed in Tableau</run>
+            </formatted-text>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='16875' id='42' type-v2='empty' w='98400' x='800' y='1000'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <layout-options export-center-vert='true' export-scale-fitpage='false' export-scale-mode-auto='false' export-scale-percent='125'>
+            <title>
+              <formatted-text>
+                <run fontcolor='#00007f' fontname='Benton Sans Book'>Hospital Readmissions KPIs</run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#000000' fontname='Tableau Light' fontsize='10' italic='true'>Key Indicators from CMS Hospital Readmissions Data </run>
+              </formatted-text>
+            </title>
+          </layout-options>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='44' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='43' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+                <zone h='10250' id='40' type-v2='title' w='98400' x='800' y='17875'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='128' h='17250' id='33' is-fixed='true' name='Total Facilities Analyzed' w='24600' x='800' y='28125'>
+                  <layout-cache fixed-size-h='68' type-h='fixed' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#cccccc' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='127' h='17250' id='32' is-fixed='true' name='Natl Avg Readmin Ratio' w='24600' x='25400' y='28125'>
+                  <layout-cache fixed-size-h='96' type-h='fixed' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#d9d9d9' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='128' h='17250' id='34' is-fixed='true' name='Facilities Above Expected Rate' w='24600' x='50000' y='28125'>
+                  <layout-cache fixed-size-h='96' type-h='fixed' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#d9d9d9' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='128' h='17250' id='35' is-fixed='true' name='Highest State Avg Readmissions' w='24600' x='74600' y='28125'>
+                  <layout-cache fixed-size-h='96' type-h='fixed' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#cccccc' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='4000' id='41' type-v2='text' w='98400' x='800' y='95000'>
+                  <formatted-text>
+                    <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='6'>Data Source: Centers for Medicare &amp; Medicaid Services (CMS) | Created by Cody Stuerman | Developed in Tableau</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{7F0429B6-2915-4D7C-9A84-1D47CE909236}' />
+    </dashboard>
+  </dashboards>
+  <windows saved-dpi-scale-factor='1.5' source-height='106'>
+    <window class='worksheet' name='Natl Avg Readmin Ratio'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{DB8E8899-08B4-4C22-86AA-D9CEFF6C341C}' />
+    </window>
+    <window class='worksheet' name='Total Facilities Analyzed'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{3A668372-BC8E-44F7-9C19-0ECA56A7CD30}' />
+    </window>
+    <window class='worksheet' name='Facilities Above Expected Rate'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{01DC3E0F-1482-4835-BE34-C04774B4C36A}' />
+    </window>
+    <window class='worksheet' name='Highest State Avg Readmissions'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0ptani30fpxnam13u2ouh0im7exm].[none:state_highest_avg_readmission:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{97C872D6-FF19-47B8-8AAA-7B88761C3D36}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Facilities Above Expected Rate'>
+          <zoom type='fit-width' />
+        </viewpoint>
+        <viewpoint name='Highest State Avg Readmissions'>
+          <zoom type='fit-width' />
+        </viewpoint>
+        <viewpoint name='Natl Avg Readmin Ratio'>
+          <zoom type='fit-width' />
+        </viewpoint>
+        <viewpoint name='Total Facilities Analyzed'>
+          <zoom type='fit-width' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{6CBBAC82-BDCE-48DE-8865-46554B46A4C6}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Dashboard 1' width='192'>
+      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
+      m3aPjo4/oGGy/i2Prz5B+AAiAIKsiQAIsiYCIMiaCIAgayIAgqydNhnO7b54DyL9uPD5fCce
+      EKVUKk8Mk33anXoRKBAIyKbdp3p//xb/IkmQNXEIJMiaCIAgayIAgqyJAAiyJgIgyJoIgCBr
+      IgCCrIkACLImAiDImgiAIGsiAIKsiQAIsiYCIMiaCIAgayIAgqyJAAiyJgIgyJoIgCBrIgCC
+      rIkACLImAiDImgiAIGsiAIKsiQAIsiYCIMiaCIAgayIAgqyJAAiyJgIgyJoIgCBrIgCCrIkA
+      CLImAiDImgiAIGsiAIKsiQAIsiYCIMiaCIAgayIAgqyJAAiyJgIgyJoIgCBrIgCCrIkACLIm
+      AiDImgiAIGsiAIKsiQAIsiYCIMiaCIAgayIAgqyJAAiyJgIgyJoIgCBrIgCCrIkACLImAiDI
+      mgiAIGsiAIKsiQAIsiYCIMiaCIAgayIAgqyJAAiyJgIgyJoIgCBrIgCCrIkACLImAiDImgiA
+      IGsiAIKsiQAIsiYCIMiaCIAgayIAgqyJAAiyJgIgyJoIgCBrIgCCrIkACLImAiDImgiAIGsi
+      AIKsiQAIsiYCIMiaCIAgayIAgqyJAAiyJgIgyJoIgCBrIgCCrIkACLImAiDImgiAIGsiAIKs
+      iQAIsiYCIMiaCIAgayIAgqyJAAiyJgIgyNr/A5u7Qde06aGCAAAAAElFTkSuQmCC
+    </thumbnail>
+    <thumbnail height='29' name='Facilities Above Expected Rate' width='157'>
+      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
+      SUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='29' name='Highest State Avg Readmissions' width='64'>
+      iVBORw0KGgoAAAANSUhEUgAAAEAAAAAdCAYAAAAaeWr3AAAACXBIWXMAABYlAAAWJQFJUiTw
+      AAADrUlEQVRYhe2Yz08TaRjHP5Q2lOpCJ+20UFiwpbuJDVrdZbNlBRNjI603ue1F/wNNjNGL
+      B6M3z+yePHrhYrmUGtNIoER0YwLhR9kgO9jCsgTarbRpbShp9wTRQpnabDsH+RzfeZ4n3/nO
+      M+/7zNQVCoUCXzEqpQUozbEBSgtQGnXxQiwWU0KHYnz1HXBsgNIClObYAKUFKM2xAUoLUJpj
+      A6pR9PHjPxDFIURxiOvX/eRyedmcRCLL5cvD+3lyPH0aRhSHMJt/Y2TkXcVaq9YBjY1qnE4T
+      09ObrK4mZePD4TiRSBKn04RGc7SsXC7P6KhEa+sJjMZG/H6JfL6yj9qqGSAIWh48+AWAV6/W
+      ZeMDAQmjsZHbt3vQag9M6J8RjSaZmdnk7t2fuXGjm9ev13n/frsinVXdAzo6mjh/3oTPt0Q2
+      u1syLpHIEgqt4XZ3Ioo62brBYASA3l4Lly518PHjLm/e/FORxqoaoFarGBz8noWFOJJU+gnN
+      zcXY2Ejj9dpka2azu7x4scK5cyY6Opqw2/V0djYRCEhl7TXFVP0UcLksNDc38PJlpGSMz7dE
+      e/s3OBwG2XqStM38fIyrV21oNCoEQcvFi9+WvdcUU3UDTCYdLlcrwWCETCZ34PrWVoapqXUG
+      BqwIgla2Xii0Rn29it5ey/6a291JKrVT0WtQdQNUqjo8HhtLSwmWlz8cuD4zs0kyuYPHY5Wt
+      Vdz+ezgcBrq69BW9BjUZhLxeK4OD33Hv3jip1M7++sZGmvv3J7l160fOnhVl6zx5Msvi4r88
+      etT32VEpCFoePuxjfHyN4eE/v0hbzSZBr9fGyso2s7Nb+2vT05tks7u43Z2y+ZlMjmAwcuDp
+      7+FwGLDb9YyOflkXHH3g/o84HAba2k4SDEa4cKGNfL7A8+cSTqd46A0Vs7z8gXA4TiKRxWL5
+      vWScKKaJRpN0denL0lUzAwRBy8CAFb//L27e/IF0Osfk5N/cufOT7OQHMDGxiiBomZj4lZaW
+      E4fGhMNxrl3zMTW1XrYBNf0Y8nisJBJZ5uZivH27AUB/f7ts3l77u1ytmEylByWbrZnubqPs
+      4PUpNTXAbtdjs+l59mwJv1+ir68Ni+WkbN7CQpzFxTgejw2Vqq5knFar5soVK/PzsSMHr0+p
+      qQE6nQav18bIyDuCwYjsDe0xNhZFp9Nw5oxRNnavo0KhtbI01fx/QH9/Ow0N9ZjNOnp6zLLx
+      qdQOY2NRenpayuqWU6eaOH3aQCAgHTp4FfMfykFNoYuD03wAAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='29' name='Natl Avg Readmin Ratio' width='187'>
+      iVBORw0KGgoAAAANSUhEUgAAALsAAAAdCAYAAADy1R2ZAAAACXBIWXMAABYlAAAWJQFJUiTw
+      AAAGCElEQVR4nO3be0xTVwDH8S+VYikFqQjlMeJjPmDDQDIRjDPuwSQ6yZyagY9NN2WPuGVB
+      2TT+o4nyx1CXbOuyZZ3R+cgeZHOJGFGBTQ1ZQbcI6zQLiDgcUChSxNKWltv9YWDraJsu3TBd
+      z+fPc+85PSf99XDOuZcwl8vlQhBCgOx+d0AQxosIuxAyRNiFkBH+9wKTyXQ/+iEI/zkxswsh
+      Q4RdCBki7ELIEGEXQoYIuxAyRNiFkCHCLoQMEXYhZIiw+2FoaJhjx64yc6aO8vKGgNtraTGz
+      bl0lqakfEx+vZfbsT9m58wL9/Xavde7edVBWpic9/SDx8VpSUj5i5cpvMRh8PwQcHnZx8mQL
+      K1acGP28xMQPWbDgOEeO/MLQ0HDA4wkWIuw+SJKLmpqbLFhwnJKSWp9h9Fdl5XXy879i8mQF
+      V65swGjcwqlTq2hpMZOX95XHOu3tAyxf/jVVVa188UUBRuMWDIYXyc5OpKDgGyoqfvVYz2Aw
+      kZf3JXv36iksTKOpaSM9Pa/T1vYKpaXZHDhwiY0bT2M2Bz6uYCDC7oXBYGLJkgrWrq2kv9/O
+      hg0ZqFQRAbX522932L27jvz86Rw48DhxcZHIZGHMmqXmk0/y0WiUDA463Oo4HBJlZT9gsTg4
+      evRpMjMTkMnCUKsVbN+ew2uvZbFrV92YGb6z08LmzVUsXTqDixfXsGZNOmq1AgCFIpxVq2Zz
+      /Phyrlzp5vPPrwU0rmAhwu7BwMAQb731PQZDD0VF6fz44wsUFqYRFhZYu4cOGbDbhyktzSYi
+      YoLbtdjYiZSWzuf8+Vtu5Q0NnVRV3WDr1nlMmzbJ7ZpMFsamTXPRaJTodI1I0p//mqBQTECr
+      zePtt+eP+awRc+ZMJisrgerqNmw2Z2CDCwIi7F7MnTuF6upC3nvvCSZNmhhwewMDQ+j1HeTm
+      Jo8J7YjMzHjOnr3hVlZX9ztqtYJFix7wWCcuLpKFC1Oor++kt9c6Wq5WK5g3L9Gvvg0OOnE4
+      JD9HErxE2D2Ijo6gvPwxMjKm/GtttrcP0NpqZvHiVGQyz38i1GoFV6/2ju4NbDYn9fUdpKfH
+      odFEeW07NzeZ7u5BWlv7/1Gf2tr6aWrqIS1tMtHRgS3RgoEI+zgxmaw4HBIajdLnfV1dFiyW
+      e+t2q9WJyWRFo1Eil3v/qkZ+CEajxe/+3L5t4803a7Hbnaxf/7Df9YLZmPfZhf+G2WwDIDZW
+      4fM+h0PCar23frZanZjNdpKSVD7rREXJkctl3Lkz5FdfGhu7KS4+Q0+PlQ8+eJJHHtH4VS/Y
+      ibCHiPb2O7z66jkuX+6iqCiN2toiVCr5/e7WuBJhHycjM/rIDO+NXC4jMvLe1xIZGU5s7EQ6
+      O+/6rGOxOHA4JGJiPK+7q6tvsmXLOQCOHFnGU09N87pv+D8TYR8nKSkqFIpwjMZBn/clJkYR
+      FXVvxlWpIkhJicZoHMThkLyu20fW6p42sZWV13njjRqmTo3h6NGnSU2NDnAkwUtsUMdJQoKS
+      qVNjOH++3e08/K/6+mw89FDc6FGnXC4jKyuBa9d6fW4+9foOEhKUzJjhfqTZ3NzHjh0XmDIl
+      ksOHl4Z00EGEfdxER0eQm5uMXt9BW5vnI8LGxh6WLJnuVrZwYQp9fTYuXrzlsU5vr5W6ut/J
+      yUkiLi5ytFySXGi1P2G3O9Fq87ye7YcSEfZx9NJLGSiVcvbvvzTmBSyz2c7+/Q0sXuz+8Gj+
+      /CQKCh7k3Xcvj/mRSJKLgwd/xmgcpLg4020d3tFxlwsXbrFs2Qyys/17uPR/J8L+LysvbyA+
+      Xuvx7cjU1Bjef/9Jampusm3bd/T2WpEkF83Nfbz88hlu37ahVLqfkMjlMvbsWYRGo+T550/R
+      2NiNJLno67Pxzjv16HSN7Nnz6JgHYK2t/ZhMVrKzk0JyM+qJ2KB6UF7ewL59nl/l3bfP/Vpy
+      sorTp1eTnOz7LHxETk4S1dXPUVamJyvrM2w2J2q1gtWrZ6PT5XusExs7kYqKZ9Dpmli//hRd
+      XRYiIiaQk5PEiRPPenzSazbbsNmclJTUUlJS67NP/3QMweoPAmwf3fhiq0AAAAAASUVORK5C
+      YII=
+    </thumbnail>
+    <thumbnail height='29' name='Total Facilities Analyzed' width='192'>
+      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
+      xLYAAAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
