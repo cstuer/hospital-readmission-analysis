@@ -6,16 +6,16 @@ This project analyzes hospital readmission data from the CMS FY2025 Hospital Rea
 
 hospital-readmission-analysis/
 ├── data/
-│   └── FY_2025_Hospital_Readmissions_Reduction_Program_Hospital.csv
+│ └── FY_2025_Hospital_Readmissions_Reduction_Program_Hospital.csv
 ├── sql/
-│   ├── clean_and_transform_readmission_data.sql
-│   ├── facility_readmission_performance.sql
-│   ├── hospital_readmissions_analysis_queries.sql
-│   ├── kpis_hospital_readmission.sql
-│   └── state_level_avg_readmissions.sql
+│ ├── clean_and_transform_readmission_data.sql
+│ ├── facility_readmission_performance.sql
+│ ├── hospital_readmissions_analysis_queries.sql
+│ ├── kpis_hospital_readmission.sql
+│ └── state_level_avg_readmissions.sql
 ├── images/
-│   ├── Hospital_Readmissions_KPIs.twb
-│   └── Hospital_Readmissions_KPIs.pdf
+│ ├── Hospital_Readmissions_KPIs.twb
+│ └── Hospital_Readmissions_KPIs.pdf
 
 ## Data Cleaning
 
