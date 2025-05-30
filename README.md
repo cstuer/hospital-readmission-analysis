@@ -3,7 +3,7 @@
 This project analyzes hospital readmission data from the CMS FY2025 Hospital Readmissions Reduction Program. The goal is to clean and explore the dataset using SQL, then visualize key performance metrics in Tableau to highlight insights related to excess readmission ratios across U.S. healthcare facilities.
 
 ## Project Structure
-
+```
 hospital-readmission-analysis/
 ├── data/
 │ └── FY_2025_Hospital_Readmissions_Reduction_Program_Hospital.csv
@@ -16,7 +16,7 @@ hospital-readmission-analysis/
 ├── images/
 │ ├── Hospital_Readmissions_KPIs.twb
 │ └── Hospital_Readmissions_KPIs.pdf
-
+```
 ## Data Cleaning
 
 Script: clean_and_transform_readmission_data.sql
